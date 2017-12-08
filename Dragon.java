@@ -12,6 +12,7 @@ public class Dragon
     private int y;
     private int size;
     private Color c;
+    private int health;
 
     /**
      * Default Constructor for objects of class Dragon
@@ -23,12 +24,14 @@ public class Dragon
         y = 50;
         size = 1;
         c = Color.GREEN; // INS comment here.
+        health = 30;
     }
     public Dragon(int x,int y, int size, Color c){
         this.x = x;
         this.y = y;
         this.size = size;
         this.c = c; // You saw nothing.
+        health = 50;
     }
         
     
@@ -49,6 +52,12 @@ public class Dragon
         g.fillRect(x, y , size * 25, size * 25); //Draw Head
         g.fillRect(x+size * 25, y + size*25, size *60, size * 50); //Draw Body
         g.fillRect(x+size * 25, (y + size*25) + size * 50, size * 10, size * 50); //Draw Leg #1
+        //Draw Health bar
+        if(health > 30)
+        {
+            g.setColor(Color.YELLOW);
+            g.fillRect(x, y - 50, size * 60, size*50/6);
+        }
         
     }
     
