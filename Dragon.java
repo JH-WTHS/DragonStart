@@ -20,11 +20,12 @@ public class Dragon
     public Dragon()
     {
         // initialise instance variables
+        //Hi my name is jen
         x = 50;
         y = 50;
         size = 1;
         c = Color.GREEN; // INS comment here.
-        health = 30;
+        health = 35;
     }
     public Dragon(int x,int y, int size, Color c){
         this.x = x;
