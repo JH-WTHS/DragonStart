@@ -65,6 +65,14 @@ public class Dragon
     /**
      * Mutator Methods
      */
+    public void dragonSpeak(String words, Graphics g) {
+        g.setColor(Color.BLUE);
+        g.fillOval(x-60, y, 50,50);
+        g.setColor(Color.WHITE);
+        g.drawString(words, x - 50, y + 25);
+        
+        
+    }
     
     /**
      * toString

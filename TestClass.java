@@ -14,10 +14,14 @@ public class TestClass
        Dragon jen = new Dragon();
        
        jen.drawDragon(g);
+       jen.dragonSpeak("Hello",g);
      
        System.out.println(jen);
        
        Dragon sarah = new Dragon(300,300,2, Color.PINK);
        sarah.drawDragon(g);
+       sarah.dragonSpeak("Hi!", g);
+       
+       
     }
 }
