@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Scene
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Scene\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=width\ height
+comment1.target=Scene(int,\ int)
+comment1.text=\r\n\ Basic\ Constructor\ which\ initializes\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ horizonColor\ ->\ Color.CYAN\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ groundColor\ \ ->\ Color.GREEN\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ sunColor\ \ \ \ \ ->\ Color.YELLOW\r\n\r\n\ @param\ \ width\ \ desired\ width\ of\ Scene\r\n\ @param\ \ height\ desired\ height\ of\ Scene\r\n\ @return\ \ \ \ none\r\n
+comment2.params=width\ height\ hC\ gC\ sC
+comment2.target=Scene(int,\ int,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
+comment2.text=\r\n\ Overloaded\ Constructor\ which\ initializes\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ horizonColor\ ->\ Color.CYAN\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ groundColor\ \ ->\ Color.GREEN\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ sunColor\ \ \ \ \ ->\ Color.YELLOW\r\n\r\n\ @param\ \ width\ \ desired\ width\ of\ Scene\r\n\ @param\ \ height\ desired\ height\ of\ Scene\r\n\ @param\ \ hC\ \ \ \ \ horizonColor\r\n\ @param\ \ gC\ \ \ \ \ groundColor\r\n\ @param\ \ sC\ \ \ \ \ sunColor\r\n\ @return\ \ \ \ none\r\n
+numComments=3

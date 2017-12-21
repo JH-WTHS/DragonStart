@@ -1,0 +1,41 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files (x86)\BlueJ\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.11.jar;C:\Program Files (x86)\BlueJ\lib\hamcrest-core-1.3.jar;C:\Program Files (x86)\BlueJ\lib\lang-stride.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\hardyj\DragonStart
+-d
+C:\Users\hardyj\DragonStart\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+C:\Users\hardyj\DragonStart\Scene.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\hardyj\DragonStart\Scene.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_144
+Building tree for all the packages and classes...
+Generating C:\Users\hardyj\DragonStart\doc\Scene.html...
+C:\Users\hardyj\DragonStart\Scene.java:34: warning - Tag @return cannot be used in constructor documentation.  It can only be used in the following types of documentation: method.
+C:\Users\hardyj\DragonStart\Scene.java:58: warning - Tag @return cannot be used in constructor documentation.  It can only be used in the following types of documentation: method.
+C:\Users\hardyj\DragonStart\Scene.java:74: warning - @return tag cannot be used in method with void return type.
+Generating C:\Users\hardyj\DragonStart\doc\package-frame.html...
+Generating C:\Users\hardyj\DragonStart\doc\package-summary.html...
+Generating C:\Users\hardyj\DragonStart\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\Users\hardyj\DragonStart\doc\allclasses-frame.html...
+Generating C:\Users\hardyj\DragonStart\doc\allclasses-noframe.html...
+Generating C:\Users\hardyj\DragonStart\doc\index.html...
+3 warnings

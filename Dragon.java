@@ -13,6 +13,7 @@ public class Dragon
     private int size;
     private Color c;
     private int health;
+    private String name;
 
     /**
      * Default Constructor for objects of class Dragon
@@ -26,13 +27,15 @@ public class Dragon
         size = 1;
         c = Color.GREEN; // INS comment here.
         health = 35;
+        name = "Unnamed";
     }
-    public Dragon(int x,int y, int size, Color c){
+    public Dragon(int x,int y, int size, Color c, String n){
         this.x = x;
         this.y = y;
         this.size = size;
         this.c = c; // You saw nothing.
         health = 50;
+        name = n;
     }
         
     
@@ -53,27 +56,32 @@ public class Dragon
         g.fillRect(x, y , size * 25, size * 25); //Draw Head
         g.fillRect(x+size * 25, y + size*25, size *60, size * 50); //Draw Body
         g.fillRect(x+size * 25, (y + size*25) + size * 50, size * 10, size * 50); //Draw Leg #1
-        //Draw Health bar
-        if(health > 30)
+        g.fillRect(x+size * 25+ size*60-size*10, (y + size*25) + size * 50, size * 10, size * 50); //Draw Leg #2//Draw Health bar
+        /*if(health > 30)
         {
             g.setColor(Color.YELLOW);
             g.fillRect(x, y - 50, size * 60, size*50/6);
-        }
+        }*/
         
     }
     
-    /**
-     * Mutator Methods
-     */
     public void dragonSpeak(String words, Graphics g) {
         g.setColor(Color.BLUE);
         g.fillOval(x-60, y, 50,50);
         g.setColor(Color.WHITE);
         g.drawString(words, x - 50, y + 25);
         
+    }
+    public void dragonSayHello(Graphics g) {
+       // g.setColor(Color.BLUE);
+       //g.fillOval(x-80, y, 80,40);
+        g.setColor(Color.BLACK);
+        g.drawString("Hello, I am " + name, x +25, y);
         
     }
-    
+    /**
+     * Mutator Methods
+     */    
     /**
      * toString
      */
