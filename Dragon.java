@@ -10,6 +10,10 @@ public class Dragon
     // instance variables - replace the example below with your own
     private int x;
     private int y;
+    private int bodyX;
+    private int bodyY;
+    private int bodyWidth;
+    private int bodyHeight;
     private int size;
     private Color c;
     private int health;
@@ -22,13 +26,17 @@ public class Dragon
     {
         // initialise instance variables
         //Hi my name is jen
-        x = 50;
+        this(50, 50, 1, Color.GREEN, "Unnamed");
+        /*x = 50;
         y = 50;
         size = 1;
         c = Color.GREEN; // INS comment here.
         health = 35;
-        name = "Unnamed";
+        name = "Unnamed";*/
     }
+    /**
+     * Overloaded Constructors go here
+     */
     public Dragon(int x,int y, int size, Color c, String n){
         this.x = x;
         this.y = y;
@@ -36,13 +44,14 @@ public class Dragon
         this.c = c; // You saw nothing.
         health = 50;
         name = n;
+        bodyX = x + size * 25;
+        bodyY = y + size * 25;
+        bodyWidth = size * 60;
+        bodyHeight = size * 50;
     }
         
     
-    /**
-     * Overloaded Constructors go here
-     */
-
+    
     /** 
      * Accessor Methods
      */
@@ -54,7 +63,7 @@ public class Dragon
     {
         g.setColor(c); // Watermelon Dragon.
         g.fillRect(x, y , size * 25, size * 25); //Draw Head
-        g.fillRect(x+size * 25, y + size*25, size *60, size * 50); //Draw Body
+        g.fillRect(bodyX, bodyY, bodyWidth, bodyHeight); //Draw Body
         g.fillRect(x+size * 25, (y + size*25) + size * 50, size * 10, size * 50); //Draw Leg #1
         g.fillRect(x+size * 25+ size*60-size*10, (y + size*25) + size * 50, size * 10, size * 50); //Draw Leg #2//Draw Health bar
         /*if(health > 30)
@@ -65,6 +74,20 @@ public class Dragon
         
     }
     
+    public int getBodyX(){
+        return bodyX;
+    }
+    
+    public int getBodyY(){
+        return bodyY;
+    }
+    
+    public int getBodyWidth(){
+        return bodyWidth;
+    }
+    public int getBodyHeight(){
+        return bodyHeight;
+    }
     public void dragonSpeak(String words, Graphics g) {
         g.setColor(Color.BLUE);
         g.fillOval(x-60, y, 50,50);
@@ -81,7 +104,10 @@ public class Dragon
     }
     /**
      * Mutator Methods
-     */    
+     */
+    public void changeColor(Color c){
+        this.c = c;
+    }
     /**
      * toString
      */

@@ -14,7 +14,7 @@ public class TestClass
        DrawingPanel panel = new DrawingPanel(800,800);
        Graphics g = panel.getGraphics();
        Scanner input = new Scanner(System.in);
-       ArrayList<Dragon> dragons = new ArrayList<Dragon>();
+       ArrayList<ScaledDragon> dragons = new ArrayList<ScaledDragon>();
        
        int num;
        //Ask user how many Dragons
@@ -25,7 +25,7 @@ public class TestClass
         while(num <=0);
        //Create correct number of Dragons
         for(int i = 1; i <= num; i++){
-           Dragon temp = new Dragon(90*i +25, 90*i + 50,1 , new Color(50*i, 50*i, 50*i), "#" + i); //contruct a new Dragon
+           ScaledDragon temp = new ScaledDragon(90*i +25, 90*i + 50,1 , new Color(50*i, 50*i, 50*i), "#" + i, Color.BLACK); //contruct a new Dragon
            dragons.add(temp); //Add the new Dragon to the ArrayList
         }
        //Draw the Dragons
@@ -33,6 +33,11 @@ public class TestClass
            dragons.get(i).drawDragon(g); //Get Dragon from ArrayList to draw it
            dragons.get(i).dragonSayHello(g); //Get Dragon from ArrayList to introduce itself
         }   
-       
+       for(int i = 0; i < dragons.size(); i++){ //Traverse ArrayList of Dragons
+           ScaledDragon temp = dragons.get(i);
+           temp.changeColor(Color.MAGENTA);
+           temp.drawDragon(g); //Get Dragon from ArrayList to draw it
+           temp.dragonSayHello(g); //Get Dragon from ArrayList to introduce itself
+        }   
     }
 }
